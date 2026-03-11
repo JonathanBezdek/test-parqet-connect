@@ -22,6 +22,8 @@ Build Parqet Connect integrations end-to-end: OAuth setup, API client generation
 - Create an integration in the Developer Console and capture Client ID, scopes, and redirect URIs.
 - Choose scopes based on required capabilities (see `references/openapi-notes.md`).
 - Determine the Connect API base URL and OAuth endpoints from Parqet docs/Developer Console (not provided in the OpenAPI spec).
+- For the exact OAuth values (authorization URL, token URL, redirect URL, base URL), reference the Parqet Developer Docs API Authentication section: https://developer.parqet.com/docs/api#description/authentication
+- If your app uses env vars like `PARQET_CLIENT_ID`, `PARQET_CLIENT_SECRET`, `PARQET_OAUTH_AUTH_URL`, `PARQET_OAUTH_TOKEN_URL`, `PARQET_REDIRECT_URI`, `PARQET_CONNECT_BASE_URL`, fill them from the console + Authentication docs.
 
 ## 2. Implement OAuth 2.0 authorization-code flow
 
